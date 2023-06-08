@@ -1,4 +1,7 @@
-def initSettings = {
+import src.settings.GetImageName
+import src.settings.UpdateSettings
+
+def initSettings() {
     // Load the initSettings script
     load "vars/initSettings.groovy"
 }
