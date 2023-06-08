@@ -1,0 +1,3 @@
+serviceAccounts:
+  rhel8-gen: svc-gke-nonlocal
+  rhel-lustre-c: svc-gke-imgbak
