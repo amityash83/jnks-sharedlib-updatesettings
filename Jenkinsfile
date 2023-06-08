@@ -15,8 +15,8 @@ pipeline {
         }
     }
     
-    // Define the initSettings function
-    def initSettings() {
+    // Define the initSettings function as a closure
+    def initSettings = {
         // Load the initSettings script
         load "vars/initSettings.groovy"
     }
