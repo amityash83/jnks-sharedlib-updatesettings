@@ -1,19 +1,23 @@
 pipeline {
     agent any
-    
+
     stages {
-        stage('Run initSettings') {
+        stage('Build') {
             steps {
+                // Checkout the repository
+                checkout scm
+
+                // Execute the initSettings step
                 script {
-                    // Clone the repository or checkout the code from version control
-                    
-                    // Set up the necessary environment variables, if required
-                    
-                    // Run the initSettings script
-                    load 'scripts/initSettings.groovy'
-                    InitSettings.init()
+                    initSettings()
                 }
             }
         }
+    }
+    
+    // Define the initSettings function
+    def initSettings() {
+        // Load the initSettings script
+        load "vars/initSettings.groovy"
     }
 }
