@@ -1,3 +1,8 @@
+def initSettings = {
+    // Load the initSettings script
+    load "vars/initSettings.groovy"
+}
+
 pipeline {
     agent any
 
@@ -13,11 +18,5 @@ pipeline {
                 }
             }
         }
-    }
-    
-    // Define the initSettings function as a closure
-    def initSettings = {
-        // Load the initSettings script
-        load "vars/initSettings.groovy"
     }
 }
