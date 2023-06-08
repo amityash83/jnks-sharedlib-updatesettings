@@ -1,4 +1,4 @@
-@Library('jnks-sharedlib-updatesettings')
+@Library('jnks-sharedlib-updatesettings') _
 
 import src.settings.GetImageName
 import src.settings.UpdateSettings
